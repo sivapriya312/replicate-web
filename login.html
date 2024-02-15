@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login</title>
+    <link rel="shortcut icon" href="img/Screenshot 2023-12-17 175300.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+ <div class="container">
+        <div class="nav">
+        <div class="logo">
+            <img src="img.png/IMG-20240215-WA0002.jpg" width="100px">
+        </div>
+        <nav>
+           <ul id="Menuitems">
+            <li> <a href="index.html"> HOME</a></li>
+            <li> <a href="login.html"> LOGIN</a></li>
+            <li> <a href="obj.html">OBJECTIVES</a></li>
+            <li> <a href="">UPCOMING EVENTS</a></li>
+            <li> <a href="about.html">ABOUT</a></li>
+            <li> <a href="">CONTACT</a></li>
+        </nav>
+        
+ </div>
+ <!--- accountpg-->
+ <div class="account-page">
+    <div class="contaniner">
+        <div class="row">
+            <div class="all2">
+                
+            </div>
+            <div class="all2">
+                 <div class="form-container">
+                    <div class="form-btun">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <br>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password"placeholder="Password">
+                        <button type="Submit" class="btun">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password"placeholder="Password" >
+                        <button type="Submit" class="btun">Register</button>
+                    </form>
+
+                 </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+<!----js for menutoogle-->
+<script>
+    var Menuitems= document.getElementById("Menuitems")
+    Menuitems.style.maxHeight="0px"
+    function menutoggle(){
+        if(Menuitems.style.maxHeight=="0px")
+        {
+            Menuitems.style.maxHeight="200px";
+        }
+        else{
+            Menuitems.style.maxHeight="0px";
+        }
+    }
+</script>
+<!----js for form-->
+<script>
+    var LoginForm= document.getElementById("LoginForm");
+    var RegForm= document.getElementById("RegForm");
+    var Indicator= document.getElementById("Indicator");
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+
+</script>
+</body>
+</html>

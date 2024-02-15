@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+    background: url('bluebg.jpeg')  center/cover fixed; 
+    margin: 0; /* Remove default body margin */
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(#012742,#030733);
+    }
+
+    @keyframes moveright {
+      from {
+        opacity: 1; 
+        transform: translateX(-45%);
+      }
+      to {
+        opacity: 1; 
+        transform: translateX(0);
+      }
+    }
+    
+    
+        
+    .bordered-div {
+    border: 5px #fff solid; 
+    padding: 20px;
+    background-color: #123145;
+    color: #fcfcfc;
+    border-radius: 15px;
+    width: 600px;
+    text-align: center; 
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    transform: translateX(-45%); 
+    box-shadow: 0 0 10px rgb(83, 56, 56);
+    }
+
+    .bordered-div:hover {
+    animation: moveright 1s ease-in-out forwards;
+    border: 3px #181414 solid; 
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center; 
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(27, 26, 26);
+    }
+  </style>
+</head>
+<body>
+    <h1>OBJECTIVES OF THE CLUB</h1>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+            
+        }
+    </style>
+
+  <div class="bordered-div">
+    <h1>Skill Development</h1>
+    <p>Enhancing Skills Through Web Dev Workshops and Challenges</p>
+  </div>
+  <div class="bordered-div">
+    <h1>Knowledge Sharing</h1>
+    <p>Creating a Club Platform for Sharing and Hosting Project Sessions</p>
+  </div>
+  <div class="bordered-div">
+    <h1>Networking</h1>
+    <p>Host talks, panels with pros for networking, start mentorship for career growth</p>
+  </div>
+  <div class="bordered-div">
+    <h1>Practical Application</h1>
+    <p>Fostering Collaboration by combining Projects and Team Coding Sessions</p>
+  </div>
+  <div class="bordered-div">
+    <h1>Community Engagement</h1>
+    <p>Implement School Outreach and Public Workshops for Web Dev Basics</p>
+  </div>
+
+</body>
+</html>
